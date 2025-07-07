@@ -1,0 +1,23 @@
+/* Apply Cairo font to the entire page */
+body { 
+    font-family: 'Cairo', sans-serif; 
+}
+
+/* Base styles for all modals for smooth transitions */
+.modal-base {
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+/* Styles for when the modal is hidden */
+.modal-hidden {
+    opacity: 0;
+    transform: scale(0.95);
+    pointer-events: none; /* Prevents interaction when hidden */
+}
+
+/* Styles for when the modal is visible */
+.modal-visible {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto; /* Allows interaction when visible */
+}
